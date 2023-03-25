@@ -1,7 +1,6 @@
 'use client';
 
-import { GitHubLogo, TwitterLogo } from './Icons';
-import { actions } from '@/data/cmd';
+import { Themes } from '@/data/cmd';
 import { cn } from '@/lib/className';
 import {
   HomeIcon,
@@ -28,7 +27,7 @@ export default function RollingMenu() {
     useRef<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>>();
   const { resolvedTheme, setTheme } = useTheme();
 
-  const memoizedActions = actions.filter((action) => {
+  const memoizedActions = Themes.filter((action) => {
     if (action.section === 'Themes') {
       return action.keywords !== resolvedTheme;
     }
@@ -153,17 +152,10 @@ export default function RollingMenu() {
                 }}
               >
                 <Comp
-                  as={
-                    action.section === 'Navigation'
-                      ? Link
-                      : action.section === 'Socials'
-                      ? 'a'
-                      : 'button'
-                  }
+                  as={'button'}
                   className={cn(
                     'flex h-10 w-10 cursor-pointer select-none flex-col items-center space-y-1 p-3 transition-all duration-200',
-                    'rounded-full',
-                    `bg-[${action.color}]`,
+                    'rounded-full bg-gray-200 dark:bg-gray-700',
                   )}
                   href={action.href ?? undefined}
                   key={i}
@@ -174,26 +166,6 @@ export default function RollingMenu() {
                   }
                   tabIndex={0}
                 >
-                  {action.keywords === 'home' && (
-                    <HomeIcon
-                      className={`h-6 w-6 text-[${action.iconColor}]`}
-                    />
-                  )}
-                  {action.keywords === 'writing' && (
-                    <PencilIcon
-                      className={`h-6 w-6 text-[${action.iconColor}]`}
-                    />
-                  )}
-                  {action.keywords === 'github' && (
-                    <GitHubLogo
-                      className={`h-6 w-6 text-[${action.iconColor}]`}
-                    />
-                  )}
-                  {action.keywords === 'twitter' && (
-                    <TwitterLogo
-                      className={`h-6 w-6 text-[${action.iconColor}]`}
-                    />
-                  )}
                   {action.keywords === 'light' && (
                     <SunIcon className={`h-6 w-6 text-[${action.iconColor}]`} />
                   )}

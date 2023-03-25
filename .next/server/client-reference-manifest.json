@@ -104,6 +104,32 @@
         "async": false
       }
     },
+    "(app-client)/./ui/editor.tsx": {
+      "*": {
+        "id": "(sc_client)/./ui/editor.tsx",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./ui/editor.tsx",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./ui/editor.tsx",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
     "(app-client)/./app/error.tsx": {
       "*": {
         "id": "(sc_client)/./app/error.tsx",
@@ -201,6 +227,32 @@
       },
       "default": {
         "id": "(sc_client)/./ui/AnimateEnter.tsx",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
+    "(app-client)/./ui/RollingMenu.tsx": {
+      "*": {
+        "id": "(sc_client)/./ui/RollingMenu.tsx",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./ui/RollingMenu.tsx",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./ui/RollingMenu.tsx",
         "chunks": [
           "app/layout:app/layout"
         ],
@@ -408,6 +460,30 @@
     "name": "default",
     "async": false
   },
+  "/Users/cristi/fun/writer/ui/editor.tsx": {
+    "id": "(app-client)/./ui/editor.tsx",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/cristi/fun/writer/ui/editor.tsx#": {
+    "id": "(app-client)/./ui/editor.tsx",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/cristi/fun/writer/ui/editor.tsx#default": {
+    "id": "(app-client)/./ui/editor.tsx",
+    "chunks": [
+      "app/page:app/page"
+    ],
+    "name": "default",
+    "async": false
+  },
   "/Users/cristi/fun/writer/app/error.tsx": {
     "id": "(app-client)/./app/error.tsx",
     "chunks": [
@@ -522,6 +598,30 @@
   },
   "/Users/cristi/fun/writer/ui/AnimateEnter.tsx#default": {
     "id": "(app-client)/./ui/AnimateEnter.tsx",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/cristi/fun/writer/ui/RollingMenu.tsx": {
+    "id": "(app-client)/./ui/RollingMenu.tsx",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/cristi/fun/writer/ui/RollingMenu.tsx#": {
+    "id": "(app-client)/./ui/RollingMenu.tsx",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/cristi/fun/writer/ui/RollingMenu.tsx#default": {
+    "id": "(app-client)/./ui/RollingMenu.tsx",
     "chunks": [
       "app/layout:app/layout"
     ],
