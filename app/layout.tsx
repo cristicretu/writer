@@ -96,6 +96,8 @@ export default function RootLayout({
         <div className="flex h-10 h-10 w-10 w-10 cursor-pointer select-none select-none flex-col items-center items-center space-y-1 rounded-full rounded-full bg-black bg-gray-500 bg-gray-200 p-3 p-3 transition-all duration-200 dark:bg-white dark:bg-gray-700"></div> */}
         {/* <div className="mx-auto max-w-2xl p-4"></div> */}
         {/* <div className="text-quaternary mx-auto mt-4 mt-8 max-w-2xl space-y-4 border-t border-dashed border-gray-200 py-12 py-4 pb-24 pt-4 text-sm dark:border-gray-700 dark:text-gray-600"></div> */}
+        {/* <div className="left-1/2 p-24"></div> */}
+        <div className="max-w-3xl"></div>
         <Providers>
           <nav className="fixed bottom-4 left-4 z-10">
             <RollingMenu />
